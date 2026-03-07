@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support — MojaNavika</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #F9FAFB;
+            color: #1F2937;
+            line-height: 1.7;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            color: #4F46E5;
+            text-decoration: none;
+            font-size: 0.9375rem;
+            font-weight: 500;
+            margin-bottom: 2rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 1.875rem;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.0625rem;
+            color: #6B7280;
+            margin-bottom: 2.5rem;
+        }
+
+        .contact-box {
+            background-color: #EEF2FF;
+            border: 1px solid #C7D2FE;
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 2.5rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .contact-box .icon {
+            font-size: 1.5rem;
+            flex-shrink: 0;
+            margin-top: 0.1rem;
+        }
+
+        .contact-box .content {
+            flex: 1;
+        }
+
+        .contact-box .content p {
+            margin-bottom: 0.25rem;
+            color: #374151;
+        }
+
+        .contact-box .content a {
+            color: #4F46E5;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-box .content a:hover {
+            text-decoration: underline;
+        }
+
+        h2 {
+            font-size: 1.375rem;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 1.25rem;
+        }
+
+        .faq-item {
+            background-color: #FFFFFF;
+            border: 1px solid #E5E7EB;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+
+        .faq-item summary {
+            padding: 1.125rem 1.5rem;
+            font-weight: 600;
+            font-size: 1rem;
+            color: #111827;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq-item summary::after {
+            content: "+";
+            font-size: 1.25rem;
+            color: #9CA3AF;
+            font-weight: 400;
+            flex-shrink: 0;
+            margin-left: 1rem;
+            transition: transform 0.15s ease;
+        }
+
+        .faq-item[open] summary::after {
+            content: "\2212";
+            color: #4F46E5;
+        }
+
+        .faq-item summary:hover {
+            color: #4F46E5;
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem 1.25rem;
+            color: #374151;
+        }
+
+        .faq-answer p {
+            margin-bottom: 0.75rem;
+        }
+
+        .faq-answer p:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-answer ol,
+        .faq-answer ul {
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .faq-answer li {
+            margin-bottom: 0.35rem;
+        }
+
+        a {
+            color: #4F46E5;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #E5E7EB;
+            color: #9CA3AF;
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">&lsaquo; MojaNavika</a>
+
+        <h1>Support</h1>
+        <p class="subtitle">Find answers below or get in touch — we're happy to help.</p>
+
+        <div class="contact-box">
+            <span class="icon">&#9993;</span>
+            <div class="content">
+                <p>Have a question or need help?</p>
+                <a href="mailto:ivan.boban@softsplit.com">ivan.boban@softsplit.com</a>
+            </div>
+        </div>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <details class="faq-item">
+            <summary>How do I create a new habit?</summary>
+            <div class="faq-answer">
+                <p>Creating a habit in MojaNavika is simple:</p>
+                <ol>
+                    <li>Open the app and tap the <strong>+</strong> button</li>
+                    <li>Enter a name for your habit (e.g., "Drink water", "Read 20 pages")</li>
+                    <li>Choose how often you want to track it (daily, specific days of the week, etc.)</li>
+                    <li>Optionally set a reminder notification</li>
+                    <li>Tap <strong>Save</strong> and you're all set</li>
+                </ol>
+                <p>Your new habit will appear on the home screen, ready to be checked off.</p>
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary>How do streaks work?</summary>
+            <div class="faq-answer">
+                <p>A streak counts the number of consecutive days (or scheduled occurrences) you have completed a habit without missing one.</p>
+                <p>For example, if you set a daily habit and complete it every day for 10 days in a row, your streak is 10. If you miss a day, the streak resets to zero and you start building it again.</p>
+                <p>For habits scheduled on specific days (e.g., Monday, Wednesday, Friday), the streak tracks consecutive scheduled days only — non-scheduled days do not break your streak.</p>
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary>How do I restore my purchases?</summary>
+            <div class="faq-answer">
+                <p>If you have previously purchased a subscription and need to restore it (for example, after reinstalling the app or switching to a new device):</p>
+                <ol>
+                    <li>Make sure you are signed in with the same Apple ID you used for the original purchase</li>
+                    <li>Open MojaNavika and go to <strong>Settings</strong></li>
+                    <li>Tap <strong>Restore Purchases</strong></li>
+                </ol>
+                <p>Your subscription status will be verified with the App Store and restored automatically. If the restore does not work, please contact us at <a href="mailto:ivan.boban@softsplit.com">ivan.boban@softsplit.com</a>.</p>
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary>How do I cancel my subscription?</summary>
+            <div class="faq-answer">
+                <p>Subscriptions are managed through your Apple ID, not inside the app. To cancel:</p>
+                <ol>
+                    <li>Open the <strong>Settings</strong> app on your iPhone</li>
+                    <li>Tap your name at the top, then tap <strong>Subscriptions</strong></li>
+                    <li>Find <strong>MojaNavika</strong> in the list and tap it</li>
+                    <li>Tap <strong>Cancel Subscription</strong> and confirm</li>
+                </ol>
+                <p>Your subscription will remain active until the end of the current billing period. You will not be charged again after cancellation.</p>
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary>Is my data private and secure?</summary>
+            <div class="faq-answer">
+                <p>Absolutely. MojaNavika is designed with a privacy-first approach:</p>
+                <ul>
+                    <li>All your data is stored <strong>locally on your device</strong> using Apple's SwiftData framework</li>
+                    <li>There are <strong>no user accounts</strong> — nothing to sign up for, nothing to leak</li>
+                    <li>There is <strong>no server or backend</strong> — the app works 100% offline</li>
+                    <li>We use <strong>no analytics, no tracking, and no third-party SDKs</strong> that collect data</li>
+                    <li>We <strong>never see, access, or transmit</strong> any of your habit data</li>
+                </ul>
+                <p>For full details, please read our <a href="privacy.html">Privacy Policy</a>.</p>
+            </div>
+        </details>
+
+        <footer>
+            <p>&copy; 2026 SoftSplit d.o.o. &middot; Split, Croatia</p>
+        </footer>
+    </div>
+</body>
+</html>
